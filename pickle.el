@@ -71,7 +71,7 @@
         (save-excursion
           (while not-indented
             (forward-line -1)
-            (if (looking-at "^[ \t]*\\(Feature\\|Scenario\\):")
+            (if (looking-at "^[ \t]*\\(Feature\\|Rule\\|Scenario\\):")
                 (progn
                   (setq cur-indent (+ default-tab-width (current-indentation)))
                   (setq not-indented nil))
